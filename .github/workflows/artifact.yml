@@ -25,13 +25,9 @@ jobs:
 
     steps:
     - uses: actions/download-artifact@v4
-      with:
-        name: hello-artifact
         
-    - name: list file
-      run: ls -a
-
-        
+    - name: Display structure of downloaded files
+      run: ls -R     
 
     - name: Read file
       run: cat hello.txt
